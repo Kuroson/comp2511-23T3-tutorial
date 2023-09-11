@@ -14,7 +14,19 @@ package example;
  * - toString
  */
 public class Shouter {
+    private String message;
+
+    public Shouter(String msg) {
+        this.message = msg;
+    }
+
+    public String getMessage() {
+        return this.message;
+    }
+
     public static void main(String[] args) {
         // TODO
+        Shouter s = new Shouter("Hello123123");
+        System.out.println(s.getMessage());
     }
 }
